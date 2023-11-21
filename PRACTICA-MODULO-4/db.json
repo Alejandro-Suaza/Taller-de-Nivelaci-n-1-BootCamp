@@ -1,7 +1,12 @@
 {
-    "users": [
-      { "id": 1, "name": "John Doe" },
-      { "id": 2, "name": "Jane Smith" }
-    ]
+  "users": [
+    {
+      "name": "Diego",
+      "id": 1
+    },
+    {
+      "name": "Camila",
+      "id": 2
+    }
+  ]
 }
-  

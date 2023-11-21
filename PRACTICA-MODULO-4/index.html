@@ -9,8 +9,17 @@
     <h1>SIMULACION ASYNC</h1>
     <div>Despues de 5 click aparecera un alert que valide la operacion.</div>
     <h1>BASE DE DATOS SIMULADA</h1>
-    <div>Muestra los datos de la base simulada Json server, toca iniciar servidor, disculpe si no funciona,
-        el navegador me bloqueaba las peticiones
+    <div>
+        <form id="userForm">
+            <label for="nameInput">Nombre:</label>
+            <input type="text" id="nameInput" name="nameInput">
+            <button type="submit">Crear Usuario</button>
+          </form>
+          
+          <div id="userList">
+            <h2>Lista de Usuarios:</h2>
+            <ul id="users"></ul>
+          </div>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
