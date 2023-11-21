@@ -57,7 +57,7 @@ function checkAndAddUser(name, userList) {
           const newUserId = generateUniqueId(users);
           newUser.id = newUserId;
 
-          axios.post('http://localhost:3000/users', newUser)
+          axios.post('https://api-nivelacion-1.onrender.com/users', newUser)
             .then(() => {
               console.log('Nuevo usuario creado');
 
@@ -78,7 +78,7 @@ function checkAndAddUser(name, userList) {
 
 
 function displayUserList(userList) {
-  axios.get('http://localhost:3000/users')
+  axios.get('https://api-nivelacion-1.onrender.com/users')
     .then((response) => {
       const users = response.data;
 
