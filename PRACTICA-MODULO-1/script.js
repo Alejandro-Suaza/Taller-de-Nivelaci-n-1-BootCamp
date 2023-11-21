@@ -17,7 +17,7 @@ function sum(a, b) {
 const sumArrow = (a, b) => a + b;
 
 console.log("Suma con function:", sum(5, 10));
-console.log("Suman con Arrow Function:", sumArrow(5, 10));
+console.log("Suma con Arrow Function:", sumArrow(5, 10));
 
 
 //Punto 3 
@@ -34,5 +34,5 @@ function sumOfEvenNumbers(numbers) {
 }
   
 const pairNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log("Sum of even numbers:", sumOfEvenNumbers(pairNumbers));
+console.log("Suma total de numeros pares:", sumOfEvenNumbers(pairNumbers));
   
