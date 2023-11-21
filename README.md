@@ -49,18 +49,18 @@ Reduce sirve para combinar todos los elementos del array y convertirlos en un un
 
 MODULO SOBRE HTML, CSS Y RESPONSIVE DESIGN 
 
-1. HTML significa Hyper Text Markup Language (Lenguaje de Marcado de Hipertexto). El HTML en pocas palabras proporciona la estructura para crear una pagina. Para darle estilos a esta misma puedes usar css o desde el propio html usar <style>, aunque si es sugerido utilizar css, y para sus funcionalidades puedes darselas con JavaScript incorporando este mismo a tu html en un <script>
+1. HTML significa Hyper Text Markup Language (Lenguaje de Marcado de Hipertexto). El HTML en pocas palabras proporciona la estructura para crear una pagina. Para darle estilos a esta misma puedes usar css o desde el propio html usar style, aunque si es sugerido utilizar css, y para sus funcionalidades puedes darselas con JavaScript incorporando este mismo a tu html en un script
 2. La estructura basica de un html contiene las siguientes etiquetas: 
-<!DOCTYPE html>: Esta etiqueta se usa principalmente para darle el tipo de documento y version a tu pagina.
-<html>: Sirve para envolver dentro de este todo el contenido de tu pagina.
-<head>: Esta se encuentra dentro de <html> y se usa principalmente para enlazar hojas de estilo, scripts, y cualquier otro elemento que no seria visible en la interfaz del usuario.
-<title>: Para darle el nombre a la pagina y que se haga visible en la pestaña del navegador.
-<body>: Este viene a ser el cuerpo de la pagina, dentro de este se encuentra todo aquello que seria visible en la pagina, todo lo que el usuario necesita ver, texto, fotos, etc
+!DOCTYPE html: Esta etiqueta se usa principalmente para darle el tipo de documento y version a tu pagina.
+html: Sirve para envolver dentro de este todo el contenido de tu pagina.
+head: Esta se encuentra dentro de html y se usa principalmente para enlazar hojas de estilo, scripts, y cualquier otro elemento que no seria visible en la interfaz del usuario.
+title: Para darle el nombre a la pagina y que se haga visible en la pestaña del navegador.
+body: Este viene a ser el cuerpo de la pagina, dentro de este se encuentra todo aquello que seria visible en la pagina, todo lo que el usuario necesita ver, texto, fotos, etc
 3. CSS es un lenguaje de estilo que tiene como finalidad darle un estilo visual a tu pagina, con este puedes cambiar tamaños de contenedores, tipos y tamaño de letras, espacios, el color de tu pagina, todo lo relacionado con el contenido y apariencia visual de tu pagina, y que el contenido dentro de este sea mas facil de entender para el usuario
 4. Los selectores de CSS son los patrones utilizados para seleccionar elementos del HTML y poder aplicar los estilos a estos mismo, los principales tipos de selectores son la clase (.clase) y el ID (#id). La especificidad en CSS determina que regla de estilo aplica al elemento cuando tiene un conflicto. Se calcula teniendo en cuenta el numero de IDs, clases, selectores de tipos, etc. Es importante el entender la especificidad de CSS para ayudarte a evitar estos conflictos y poder aplicar de manera correcta los estilos en tu proyecto web
-5. Los Estilos en linea (Inline) son aquellos que se aplican directamente a un elemento HTML a traves del atributo <style>, este solo afectara al elemento al que se le aplique, se usan principalmente para dar un estilo rapido a un elemento
-Estilos internos (Embedded):Se usa el atributo <style> y este se pone dentro de la etiqueta <head> del HTML, se puede aplicar a varios elementos dentro del HTM, este solo se usa dentro de un documento en especifico, por lo cual puede causar problemas al reutilizar el codigo.
-Estilos externos (External): Este se define dentro de un documento CSS, el cual se encuentra separado del HTML, pero se puede incorporar a este a traves de la etiqueta <link>, se puede usar en diferentes paginas, y se puede organizar todos los estilos en un solo lugar, lo cual hace el codigo mas legible y organizado.
+5. Los Estilos en linea (Inline) son aquellos que se aplican directamente a un elemento HTML a traves del atributo style, este solo afectara al elemento al que se le aplique, se usan principalmente para dar un estilo rapido a un elemento
+Estilos internos (Embedded):Se usa el atributo style y este se pone dentro de la etiqueta head del HTML, se puede aplicar a varios elementos dentro del HTM, este solo se usa dentro de un documento en especifico, por lo cual puede causar problemas al reutilizar el codigo.
+Estilos externos (External): Este se define dentro de un documento CSS, el cual se encuentra separado del HTML, pero se puede incorporar a este a traves de la etiqueta link, se puede usar en diferentes paginas, y se puede organizar todos los estilos en un solo lugar, lo cual hace el codigo mas legible y organizado.
 Es recomendado usar los estilos externos, aparte de ser preferido por la mayoria de programadores, este sirve de mucho al ser mas organizado, poder reutilizar el codigo, y separa tu codigo HTML de los estilos, lo cual evita complicaciones al momento de programar. 
 6. Flexbox se considera una herramienta de gran importancia en el lenguaje CSS, este permite darles flexibilidad y adaptacion a los diseños, se usa principalmente en propiedades como display: flex, que permite al contenedor hacerlo flexible y asi poder controlar su disposicion, alineacion, y la distribucion de sus elementos hijos (Elementos que lo conforman), tambien se usa flex-direction, justify-content, aling-items, flex-wrap. La ventaja de usar estos es que nos da la oportunidad de darle diseños responsivos a nuestro proyecto, haciendo que se adapten a cualquier tamaño de pantalla.
 7. Display Flex y Display inline-flex: Estos activan el diseño Flexbox en el contenedor padre, permitiendo dar la flexibilidad a los elementos dentro de este.
@@ -70,10 +70,10 @@ Aling-items: Este permite la alineacion vertical u horizontal de los elementos, 
 Flex-wrap: Permite alinear los elementos en una sola linea o en multiples. Todo esto dentro del contenedor.
 8. CSS Grid Layout es otro metodo de diseño implementado en CSS que permite el uso de creacion de diseños en filas y columnas de una manera mas precisa. Lo que lo diferencia del Flexbox es que el Flexbox se enfoca en diseños ideales para estructuras simples a lo largo de un eje. El CSS Grid Layout permite la creacion mas compleja brindando el control sobre filas, columnas, celdas.
 9. 
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="item">1</div>
   <div class="item">2</div>
-</div>
+</div> -->
 
 10. El diseño responsivo es lo que se refiere al adaptar la interfaz de una app a diferentes tamaños de pantalla.
 11. Media Queries: Permite aplicar medidas o estilos especificos a los elementos dependiendo el tamaño de la pantalla
@@ -88,7 +88,7 @@ MODULO SOBRE DOM E INTERACCION CON EL DOM
 3. Es importante entender estos conceptos porque son de gran importancia al momento de crear sitios dinamicos, responsivos para darle una mejor experiencia al usuario, que no este sobrecargada la pagina y tenga un mejor rendimiento al realizar los servicios 
 4. Los eventos del DOM permiten que las experiencias al momento del desarrollo sean mas interactivas, validar los formularios, modificar el contenido de tu pagina. Dan la capacidad de recibir y dar respuesta a la interactividad que espera el usuario
 5. 
-6.Es importante porque permite responde rlas acciones que realiza el usuario, nos podemos referir a esto a validaciones, cambiar el contenido de la misma, acciones que produce un evento como los clicks, envios, cambio.
+6. Es importante porque permite responde rlas acciones que realiza el usuario, nos podemos referir a esto a validaciones, cambiar el contenido de la misma, acciones que produce un evento como los clicks, envios, cambio.
 Para seleccionar un elemento que utilizaremos, podemos usar el documen.getElement, este trabaja con la clase que le damos a cuyo elemento, id o nombre, un ejemplo seria:
 let newElement = document.getElementById("newElement");
 
@@ -133,16 +133,17 @@ const newPetition = () => {
 newPetition ()
  .then(resultado => console.log('Datos Obtenidos:', resultado))
  .catch(error => console.log('Error:', error));
-7. El JSON Server es una herramienta para crear un servidor de datos simulados, principalmente se usa para hacer pruebas de una aplicacion con API REST con datos simulados dentro del JSON
-8. Es importante porque permite adelantar el trabajo, hacer pruebas para su mejor rendimiento y correcta respuesta sin necesidad de tener disponible el BackEnd
-9. El metodo then es un proceso mas largo y complicado haciendo un poco confuso el codigo, el async/await proporciona un metodo mas corto y legible, haciendo mas facil de leer y manejar. Un ejemplo es el manejo de errores, then los maneja con catch de manera encadenada, el async permite manejar un bloque try/catch para hacer mas Facil el manejo de errores 
+
+7. El JSON Server es una herramienta para crear un servidor de datos simulados, principalmente se usa para hacer pruebas de una aplicacion con API REST con datos simulados dentro del JSON.
+8. Es importante porque permite adelantar el trabajo, hacer pruebas para su mejor rendimiento y correcta respuesta sin necesidad de tener disponible el BackEnd.
+9. El metodo then es un proceso mas largo y complicado haciendo un poco confuso el codigo, el async/await proporciona un metodo mas corto y legible, haciendo mas facil de leer y manejar. Un ejemplo es el manejo de errores, then los maneja con catch de manera encadenada, el async permite manejar un bloque try/catch para hacer mas Facil el manejo de errores.
 10.
-1. Fetch es una API basica que trae el propio Js, Axios es una biblioteca externa (Que debe ser instalada) pero ofrece mas utilidades que Fetch a la hora de realizar las peticiones HTTP.
+11. Fetch es una API basica que trae el propio Js, Axios es una biblioteca externa (Que debe ser instalada) pero ofrece mas utilidades que Fetch a la hora de realizar las peticiones HTTP.
 Fetch aunque sea incorporado este no es compatible en versiones antiguas de los navegadores en cambio Axios es compatible con antiguos y modernos.
-12. Las peticiones HTTP son consideradas por la oportunidad de tener una interactividad entre el cliente y el servidor y la posibilidad de integrar servicios en tiempo real 
+12. Las peticiones HTTP son consideradas por la oportunidad de tener una interactividad entre el cliente y el servidor y la posibilidad de integrar servicios en tiempo real.
 13.
 14. El resolver errores con peticiones ayuda de manera que sea mas optimo, seguro y de agrado para el usuario la aplicacion web y que sea sencillo el uso y mantenimiento de esta misma.
 15. El then se encarga de capturar las respuestas y el catch encadenado al then es fundamental para capturar cualquier error que genera esta cadena de respuesta, este debe ser puesto al final de la cadena y puede ser utilizado varias veces para los errores especificos en el codigo.
 Usando el fetch se usa el throw new error dentro del then para luego ser procesado por el catch.
 16. El then se usa en promesas asincronas permitiendo un mejor uso de operaciones, el try/catch se usa para dar excepcion a cierto bloque de codigo especifico.
-17. Respuesta punto 6 
+17. Respuesta punto 6.
