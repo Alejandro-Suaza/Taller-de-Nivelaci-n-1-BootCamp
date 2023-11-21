@@ -21,23 +21,42 @@ list.addEventListener("click", function(event) {
   }
 });
 
-//PUNTO 3 VALIDACION FORM
-function validateForm(event) {
-    event.preventDefault();
-  
-    let input = document.getElementById("my-input");
-    let inputValue = input.value.trim();
-  
-    if (inputValue === "") {
-      let errorElement = document.getElementById("error-message");
-      errorElement.textContent = "Por Favor ingresa un valor.";
-      errorElement.style.display = "block";
-    } else {
-      console.log("El Valor enviado fue:", inputValue);
-      alert("Formulario enviado con exito! Gracias!");
+//PUNTO 3 VALIDACION FORM - GUARDADO Y RECUPERACION DE DATOS DE LOCAL Y SESSIONSTORAGE
+document.addEventListener("DOMContentLoaded", function() {
+
+    let savedValue = localStorage.getItem('savedValue');
+    if (savedValue) {
+        document.getElementById('my-input').value = savedValue;
     }
-  }
-  
-  let form = document.getElementById("my-form");
-  form.addEventListener("submit", validateForm);
-  
+
+    function saveToStorage(value) {
+      localStorage.setItem('savedValue', value);
+      sessionStorage.setItem('savedValue', value);
+    }
+
+    function validateForm(event) {
+        event.preventDefault();
+
+        let input = document.getElementById("my-input");
+        let inputValue = input.value.trim();
+
+         let errorElement = document.getElementById("error-message");
+
+         if (inputValue === "") {
+            errorElement.textContent = "Por favor, ingrese un valor.";
+            errorElement.style.display = "block";
+        } else {
+            console.log("El valor enviado fue:", inputValue);
+            alert("¡Formulario enviado correctamente! Gracias!");
+            errorElement.style.display = "none";
+            input.value = ""; 
+        saveToStorage(inputValue);
+        }
+    }
+
+    let form = document.getElementById("my-form");
+    form.addEventListener("submit", validateForm);
+    
+    console.log(localStorage);
+    console.log(sessionStorage);
+});
